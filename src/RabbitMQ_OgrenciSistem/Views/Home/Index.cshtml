@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Ogrenci>
+@{
+  ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+  <table id="example" class="table table-striped" style="width:100%">
+    <thead>
+      <tr>
+        <th>Ad</th>
+        <th>Soyad</th>
+        <th>Gönderilme Durumu</th>
+      </tr>
+    </thead>
+    <tbody>
+@*      @foreach (var ogr in Model) { 
+      <tr>
+        <td>@ogr.FirstName</td>
+        <td>@ogr.LastName</td>
+          @if (ogr.IsReceived == false)
+          {
+            <td>Kuyrukta</td>
+          }
+          else if(ogr.IsReceived == true)
+          {
+            <td>Teslim Alındı</td>
+          }
+        </tr>
+      }*@
+    </tbody>
+  </table>
+</div>
